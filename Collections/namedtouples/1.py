@@ -1,8 +1,7 @@
 from collections import namedtuple
 
-User = namedtuple('Demo', 'name age')
+User = namedtuple('Demo', 'name age', rename=True)
 
 c = User('Jayanth', 24)
-print(c)
-print(type(c))
-print(User)
+print(c.name)
+print(User._fields)
